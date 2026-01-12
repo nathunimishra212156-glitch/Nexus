@@ -1,0 +1,18 @@
+# 1. Build Settings: Tells Netlify how to compile your TypeScript/React code
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# 2. Redirects: Essential for Single Page Apps (SPA)
+# This prevents 404 errors when you refresh the page on a sub-route
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# 3. Security & Optimization (Optional but recommended)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"

@@ -1,0 +1,8 @@
+{
+  "name": "KSHITIZ CODERS Laboratory",
+  "short_name": "KshitizLab",
+  "description": "High-fidelity AI Engineering workbench by Kshitiz Mishra.",
+  "theme_color": "#020617",
+  "background_color": "#020617",
+  "requestFramePermissions": []
+}
